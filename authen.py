@@ -39,4 +39,4 @@ class authen:
             store_updating.add_stock()
         else:
             print("invalid input")
-        print("verified username")
+        print("verified username for real ")
