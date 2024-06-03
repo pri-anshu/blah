@@ -23,6 +23,7 @@ class authen:
                     authen.admin_usecase()
                     return
                 else:
+                    print("--> Enter your password again:")
                     password = getpass.getpass("--> Enter your password again: ")
                     trial += 1
         else:
