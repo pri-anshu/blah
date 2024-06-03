@@ -11,7 +11,7 @@ class take_order:
         while loop == True:
             run = True
             while run == True:
-                a = input("Enter the item that is to be ordered- ")
+                a = input("--> Enter the item that is to be ordered- ")
                 if a not in data.shelf:
                     print("Item not found in the store, try different item.")
                 else:
