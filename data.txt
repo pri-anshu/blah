@@ -1,0 +1,9 @@
+potato: 30,3
+onion: 45,2
+tomato: 50,7
+banana: 10,4
+mango: 60,4
+apple: 90,9
+pineapple: 76,77
+lemon: 23,68
+orange: 14,60
