@@ -3,25 +3,27 @@ from tabulate import tabulate
 
 class bill:
     slip = {}
-
+    head=["Item","Quantity","Rate"]
     def add_to_bill(name, quan, price):
-        bill.slip[name] = quan, price
-        print(bill.slip)
+        bill.slip[name.upper()] = quan, price
+        # head=["Item","Quantity","Rate"]
+        bill_table=[]
+        for key, values in bill.slip.items():
+            bill_table.append([key]+list(values))
+        print(tabulate(bill_table,headers=bill.head,tablefmt="grid"))
+
 
     def display_bill():
         print(bill.slip)
-
-        
-
-        head = ["Item", "Quantity", "Rate"]
-        table = []
+        bill_table = []
         for key, values in bill.slip.items():
-            table.append([key] + list(values))
+            bill_table.append([key] + list(values))
 
         sum = 0
         for i in bill.slip:
             sum = sum + bill.slip[i][1]
-        table.append(["TOTAL PRICE"] + [""] + [sum])
-        print(tabulate(table, headers=head, tablefmt="grid"))
+            
+        bill_table.append(["TOTAL PRICE"] + [""] + [sum])
+        print(tabulate(bill_table, headers=bill.head, tablefmt="grid"))
 
         exit(0)

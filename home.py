@@ -7,7 +7,7 @@ class product:
         self.name = name
         self.price = price
         self.quan = quan
-        print("instance created")
+        print("Order Created")
 
     def __call__(self):
         total = self.quan * self.price
