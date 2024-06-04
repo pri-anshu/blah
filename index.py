@@ -7,14 +7,13 @@ class index:
         flag = True
         while flag == True:
             choice = input("User or Admin or Exit? ")
-            if choice == "user":
+            if choice.lower() == "user":
                 take_order.ordering()
-            elif choice == "admin":
+            elif choice.lower() == "admin":
                 authen.authentication()
-            elif choice == "exit":
+            elif choice.lower() == "exit":
                 print("exiting store, thank you for visit!")
                 flag = False
             else:
-                print("invalid input")
-
+                print("-- Invalid Input --")
     start()
