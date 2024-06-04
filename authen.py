@@ -32,11 +32,11 @@ class authen:
 
     def admin_usecase():
         flag = input("System--> Do you wish to add new user or edit the store? ")
-        if flag == "new user":
+        if flag.lower() == "new user":
             new_user.new_user(authen.unp)
             # new_user.new_user(authen.database, authen.unp)
-        elif flag == "edit store":
+        elif flag.lower() == "edit store":
             store_updating.add_stock()
         else:
-            print("invalid input")
-        print("verified username for real ")
+            print("-- invalid input--")
+        print("-- verified --")
