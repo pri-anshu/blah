@@ -15,4 +15,4 @@ class read_data:
         with open(file, "a") as file:
             for key, value in res.items():
                 file.write(f"{key}: {value}\n")
-        print("data updated successfully.")
+        print("System--> Data updated successfully.")

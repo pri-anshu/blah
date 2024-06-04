@@ -3,15 +3,17 @@ from product_update import product_update
 
 
 class update_item:
-    def add_items(item):
-        value = int(input("Enter the quantity to be added- "))
+    def add_items(item,z):
+        print("Enter the quantity to be added-")
+        value = int(input("{}--> ".format(z)))
         quan = data.stock.get(item) + value
         data.stock.update({item: quan})
-
-        temp = input("do you wish to update the price? ")
-        if temp == "yes":
-            price = input("Enter the price of the item: ")
+        print("System--> Do you wish to update the price?")
+        temp = input("{}--> ".format(z))
+        if temp.lower() == "yes":
+            print("System--> Enter the price of the item:")
+            price = input("{}--> ".format(z))
             data.shelf.update({item: price})
             product_update.update_data(item, value, price)
         else:
-            print("adding item to stock without updating price")
+            print("Adding item to stock without updating price")
