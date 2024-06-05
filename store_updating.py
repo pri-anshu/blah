@@ -7,7 +7,7 @@ class store_updating:
     def add_stock(z):
         print("System--> Enter the item to be added-")
         item = input("{}--> ".format(z))
-        if item in data.stock:
+        if item in data.product_quan:
             # update_item.add_items(item.name)
             # commenting this to try new stuff
             update_item.add_items(item,z)
