@@ -10,10 +10,10 @@ class new_item:
         if temp.lower() == "yes":
             print("System--> Enter the quantity to be added-")
             quan = int(input("{}--> ".format(z)))
-            data.stock.update({item: quan})
+            data.product_quan.update({item: quan})
             print("System--> Enter the price of item-")
             price = int(input("{}--> ".format(z)))
-            data.shelf.update({item: price})
+            data.product_price.update({item: price})
             product_update.update_data(item, quan, price)
         elif temp.lower() == "no":
             print("-- Exiting, Thank You! --")
