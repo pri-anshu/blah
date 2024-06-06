@@ -10,8 +10,8 @@ class store_updating:
         if item in data.product_quan:
             # update_item.add_items(item.name)
             # commenting this to try new stuff
-            update_item.add_items(item,z)
+            update_item.add_items(item, z)
         else:
             # new_item.add_new_item(item.name)
             # commenting this to try new stuff
-            new_item.add_new_item(item,z)
+            new_item.add_new_item(item, z)

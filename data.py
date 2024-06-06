@@ -16,9 +16,11 @@ class data:
     for i in range(len(value_list)):
         product_price.update({key_list[i]: value_list[i][0]})
         product_quan.update({key_list[i]: value_list[i][1]})
+
     def quotes_remover(dicts):
         for s in dicts:
             for keys in dicts:
                 dicts[keys] = int(dicts[keys])
+
     quotes_remover(product_price)
     quotes_remover(product_quan)

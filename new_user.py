@@ -1,5 +1,6 @@
 from read_data import read_data
 
+
 class new_user:
     # def new_user(n):
     #     a = {}
@@ -9,7 +10,7 @@ class new_user:
     #     a[new_username] = new_password
     #     read_data.editdata(a, n)
 
-    def new_user(n,z):
+    def new_user(n, z):
         a = {}
         print("System--> Adding new store admin")
         print("System--> Enter the new username:")

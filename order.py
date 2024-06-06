@@ -16,8 +16,7 @@ class take_order:
                 print("Enter the item to be ordered-")
                 I = input("- ")
                 if I not in data.product_price:
-                    print("Item not found in the store,",
-                          "try different item.")
+                    print("Item not found in the store,", "try different item.")
                 else:
                     print(
                         "Item found, Priced at- ",
@@ -29,23 +28,26 @@ class take_order:
             print("Enter the required quantity-")
             Q = int(input("- "))
             if Q > data.product_quan.get(I):
-                print("Sorry requied quantity isn't available",
-                      "quantity available- ", data.product_quan.get(I))
-            elif Q==0:
+                print(
+                    "Sorry requied quantity isn't available",
+                    "quantity available- ",
+                    data.product_quan.get(I),
+                )
+            elif Q == 0:
                 print("Sorry can't order quantity 0")
             else:
                 item = product(I, data.product_price.get(I), Q)
                 item()
                 print("Do you wish to continue?")
                 choice = input("- ")
-                if choice.lower() == 'yes':
+                if choice.lower() == "yes":
                     loop1 = True
-                elif choice.lower() == 'no':
+                elif choice.lower() == "no":
                     loop1 = False
 
                     print("Would you like to delete any item from order?")
                     order = input("- ")
-                    if order.lower() == 'yes':
+                    if order.lower() == "yes":
                         delete.remove_item()
                     # else:
                     #     pass

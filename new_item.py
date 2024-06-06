@@ -3,7 +3,7 @@ from product_update import product_update
 
 
 class new_item:
-    def add_new_item(item,z):
+    def add_new_item(item, z):
         print("System--> Item not found in the store.")
         print("System--> Do you wish to add new item?")
         temp = input("{}--> ".format(z))

@@ -3,7 +3,7 @@ from product_update import product_update
 
 
 class update_item:
-    def add_items(item,z):
+    def add_items(item, z):
         print("Enter the quantity to be added-")
         value = int(input("{}--> ".format(z)))
         quan = data.product_quan.get(item) + value
