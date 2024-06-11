@@ -36,8 +36,11 @@ class take_order:
             elif Q == 0:
                 print("Sorry can't order quantity 0")
             else:
+
                 item = product(I, data.product_price.get(I), Q)
-                item()
+                
+                item() 
+                
                 print("Do you wish to continue?")
                 choice = input("- ")
                 if choice.lower() == "yes":
