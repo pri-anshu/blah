@@ -20,4 +20,4 @@ class product_update:
         temp.update({item: my_string})
         print(temp)
 
-        read_data.editdata(temp, r"OOPS\store orcestation\data.txt")
+        read_data.editdata(temp, r"back\data")
