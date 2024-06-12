@@ -4,7 +4,7 @@ from read_data import read_data
 class data:
     product_price = {}
     product_quan = {}
-    temp = read_data.readdata((r"data.txt"))
+    temp = read_data.readdata((r"back\data"))
     key_list = [i for i in temp]
     value_list = []
     for i in range(len(temp)):

@@ -6,7 +6,7 @@ from store_updating import store_updating
 
 class authen:
     unp = (
-        r"C:\Users\PSINGH87\Music\python training (personal)\OOPS\store orcestation\unp"
+        r"back\unp"
     )
     database = read_data.readdata(unp)
 
@@ -34,7 +34,7 @@ class authen:
         print("System--> Do you wish to add new user or edit the store?")
         flag = input("{}--> ".format(z))
         if flag.lower() == "new user":
-            authen.database.update(new_user.new_user(authen.unp, z))
+            authen.database.update(new_user.new_user(authen.unp, z,authen.database))
             # new_user.new_user(authen.database, authen.unp)
         elif flag.lower() == "edit store":
             store_updating.add_stock(z)
