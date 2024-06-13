@@ -12,31 +12,24 @@ class new_user:
     #     read_data.editdata(a, n)
 
     def new_user(n, z,database):
-        print("System--> Adding new store admin")
-        print("System--> Enter the new username:")
         a={}
-        temp=True
-        while temp==True:
-            new_username = input("{}--> ".format(z))
-            if new_username in database:
-                print("\nSystem--> User Already exist in Database")
-                print('System--> Please enter a new user')
-                new_user.new_user(n,z,database)
+        new_username = input("{}--> ".format(z))
+        if new_username in database:
+            print("\nSystem--> User Already exist in Database")
+            print('System--> Please enter a new user')
+            a=new_user.new_user(n,z,database)
+            return a
 
+        elif new_username=='exit':
+            a=False
+            return a
 
-            elif new_username=='exit':
-                print('exit function')
-                temp=False
-                break
-
-            
-            else:
-                # break
-                print("System--> Password for new user:")
-                new_password = input("{}--> ".format(z))
-                a[new_username] = new_password
-                read_data.editdata(a, n)
-                return a
+        else:
+            print("System--> Password for new user:")
+            new_password = input("{}--> ".format(z))
+            a[new_username] = new_password
+            read_data.editdata(a, n)
+            return a
 
         # new_user.making_user(n,database,z)
 
@@ -69,5 +62,3 @@ class new_user:
 
         # else:
         #     break
-
-       
