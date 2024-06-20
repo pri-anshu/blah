@@ -1,4 +1,5 @@
 from read_data import read_data
+
 # from index import index
 
 
@@ -11,17 +12,17 @@ class new_user:
     #     a[new_username] = new_password
     #     read_data.editdata(a, n)
 
-    def new_user(n, z,database):
-        a={}
+    def new_user(n, z, database):
+        a = {}
         new_username = input("{}--> ".format(z))
         if new_username in database:
             print("\nSystem--> User Already exist in Database")
-            print('System--> Please enter a new user')
-            a=new_user.new_user(n,z,database)
+            print("System--> Please enter a new user")
+            a = new_user.new_user(n, z, database)
             return a
 
-        elif new_username=='exit':
-            a=False
+        elif new_username == "exit":
+            a = False
             return a
 
         else:
@@ -53,12 +54,12 @@ class new_user:
     #             read_data.editdata(a, n)
     #             return a
 
-        # elif new_username is 'exit':
+    # elif new_username is 'exit':
 
-            # sys.exit(0)
-            # exit()
-            # index.start()
-            #pass #circular interitance while using start() from index
+    # sys.exit(0)
+    # exit()
+    # index.start()
+    # pass #circular interitance while using start() from index
 
-        # else:
-        #     break
+    # else:
+    #     break

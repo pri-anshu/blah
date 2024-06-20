@@ -5,9 +5,7 @@ from store_updating import store_updating
 
 
 class authen:
-    unp = (
-        r"back\unp"
-    )
+    unp = r"back\unp"
     database = read_data.readdata(unp)
 
     def authentication():
@@ -43,7 +41,7 @@ class authen:
             print("System--> Enter the new username:")
 
             while True:
-                a=new_user.new_user(authen.unp,z,authen.database)
+                a = new_user.new_user(authen.unp, z, authen.database)
                 if a == False:
                     print("-- Exiting Process --")
                     break
@@ -58,9 +56,6 @@ class authen:
         else:
             print("-- invalid input--")
         print("-- verified --")
-
-
-
 
     # def admin_usecase(z):
     #     print("System--> Select one from below options\n  -> 1. new user\n  -> 2. edit store"

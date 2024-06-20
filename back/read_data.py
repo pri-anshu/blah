@@ -16,4 +16,3 @@ class read_data:
             for key, value in res.items():
                 file.write(f"{key}: {value}\n")
         print("System--> Data updated successfully.")
-

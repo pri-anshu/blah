@@ -38,9 +38,9 @@ class take_order:
             else:
 
                 item = product(I, data.product_price.get(I), Q)
-                
-                item() 
-                
+
+                item()
+
                 print("Do you wish to continue?")
                 choice = input("- ")
                 if choice.lower() == "yes":
