@@ -1,4 +1,4 @@
-from data import *
+# from data import *
 from bill import bill
 
 

@@ -1,7 +1,6 @@
-from data import *
+from data_unpacking import *
 from new_item import new_item
 from update_item import update_item
-
 
 class store_updating:
     def add_stock(z):

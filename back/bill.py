@@ -1,5 +1,5 @@
 from tabulate import tabulate
-
+from stock_reduction import stock_reduction
 
 class bill:
     slip = {}
@@ -13,12 +13,15 @@ class bill:
             bill_table.append([key] + list(values))
         print(tabulate(bill_table, headers=bill.head, tablefmt="grid"))
 
+
+
     def display_bill():
         print(bill.slip)
+
         bill_table = []
         for key, values in bill.slip.items():
             bill_table.append([key] + list(values))
-
+        stock_reduction.stock_reduction(bill.slip)
         sum = 0
         for i in bill.slip:
             sum = sum + bill.slip[i][1]
